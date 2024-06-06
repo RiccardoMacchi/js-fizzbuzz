@@ -12,10 +12,16 @@ body {
 /* Regole titolo click */
 
 #click_fb {
-    width: 80%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 20px auto;
     text-align: center;
+    padding: 25px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #70ff65;
 }
+
+
 
 /* regole Box numerici */
 #container {
@@ -23,13 +29,13 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
 .my_box {
-    width: 100px;
-    height: 100px;
+    width: calc((100% / 10) - 20px);
+    aspect-ratio: 1 / 1;
     background-color: #1389b2;
     position: relative;
 }
@@ -51,4 +57,17 @@ body {
 
 .fizz_buzz {
     background-color: #f0466f;
+}
+
+
+@media all and (max-width:1024px){
+    .my_box {
+        width: calc((100% / 6) - 20px);
+    }
+}
+
+@media all and (max-width:562px){
+    .my_box {
+        width: calc((100% / 4) - 20px);
+    }
 }
