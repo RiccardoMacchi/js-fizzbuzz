@@ -3,6 +3,8 @@
 // Stampa di numeri da 1 a 100
 let displayNum;
 
+// document.getElementById("click_fb").addEventListener("click",)
+
 for (let i=1; i <=100; i++){
     
     // document.getElementById("container").innerHTML += `<div class="box"> <span> ${displayNum} </span> </div>`

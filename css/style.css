@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #083b4c;
+}
+/* Regole titolo click */
+
+#click_fb {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* regole Box numerici */
 #container {
     max-width: 90%;
     margin: 0 auto;
