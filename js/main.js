@@ -5,25 +5,43 @@ let displayNum;
 
 for (let i=1; i <=100; i++){
     
+    // document.getElementById("container").innerHTML += `<div class="box"> <span> ${displayNum} </span> </div>`
+    let container = document.getElementById("container");
+    // Stampa in pagina dei box con i vari numeri
+    // Creazione elemento div
+    let myBox = document.createElement("div");
+    // Inserito elemento div mybox all'interno di container
+    container.append(myBox);
+    // Aggiunta classe generale mybox
+    myBox.className = "my_box"
+    // Inserito contenuto i(fiz buzz fizzbuzz o numero) dentro container appena creato mybox
+    
+    
+
 // verifica della condizione se sono divisivili per 3 e 5
     if (i % 3 === 0 && i % 5 === 0){
         displayNum = "FizzBuzz"
+        // Aggiunta sua classe 
+        myBox.classList.add("fizz_buzz")
         console.log(i, "divisibile per 3 e 5")
     } else if (i % 3 === 0){
         displayNum = "Fizz"
+        // Aggiunta sua classe
+        myBox.classList.add("fizz")
         console.log(i, "divisibile per 3")
     } else if (i % 5 === 0){
         displayNum = "Buzz"
+        // Aggiunta sua classe
+        myBox.classList.add("buzz")
         console.log(i, "divisibile per 5")
     } else {
         displayNum = i
         console.log(i, "non divisibili per 3 o 5")
     }
-
-    document.getElementById("container").innerHTML += `<div class="box"> ${displayNum} </div>`
-
-        
-
-
+    let contNum = document.createElement("span")
+    myBox.append(contNum)
+    contNum.append(displayNum);
+    console.log(myBox);
+    // document.getElementById("container").innerHTML += `<div class="box"> <span> ${displayNum} </span> </div>`
     
 }

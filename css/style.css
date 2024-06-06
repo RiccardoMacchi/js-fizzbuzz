@@ -1,0 +1,42 @@
+/* Regole generali */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.my_box {
+    width: 100px;
+    height: 100px;
+    background-color: #1389b2;
+    position: relative;
+}
+
+.my_box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fizz{
+    background-color: #0cd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizz_buzz {
+    background-color: #f0466f;
+}
